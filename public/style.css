@@ -5,13 +5,9 @@
 }
 
 html{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-}
-@media screen and (max-width:1024){
-  html{
-    width: 110%;
-  }
+  position: relative;
 }
 
 .TeamRow{
@@ -28,6 +24,7 @@ header {
     margin-top: -60px;
     padding-top:60px;
     margin-bottom: 30px;
+    overflow: hidden;
   }
   #video-head{
     padding: 0px;
@@ -36,8 +33,6 @@ header {
     background-color:#DCDCDC;
     padding-top: 58px;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 @media only screen and (min-width: 650px) {
@@ -58,7 +53,6 @@ header {
 @media only screen and (max-width: 768px){
   body{
     width: 100%;
-    float: right;
   }
 }
 @media only screen and (min-width: 830px) {
@@ -153,10 +147,9 @@ header {
   }
 }
 
-
 @media only screen and (max-width: 420px){
   body{
-    padding-top: 135px;
+    padding-top: 100px;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -207,21 +200,17 @@ footer{
 
 /*navBar*/
 #mainNav{
+  width:100%;
+  box-sizing: border-box;
   padding-right:3%;
   padding-left: 5%;
   opacity: 0.95;
   filter: alpha(opacity=95);
+  overflow: hidden;
 }
 @media only screen and (max-width: 1024px){
   #mainNav{
-    padding-left: 0px;
-    padding-right: 10%;
-  }
-}
-@media only screen and (max-width: 768px){
-  #mainNav{
-    padding-right: 0px;
-    width: 768px;
+    padding: 0;
   }
 }
 .nav-link{
@@ -932,6 +921,7 @@ video {
 @media (max-width: 600px) { /* <- 2-1  hexagons per row */
   #hexGrid{
     padding-bottom: 11.2%
+    
   }
   .hex {
     width: 25%; /* = 100 / 3 */
@@ -944,6 +934,7 @@ video {
 @media (max-width: 400px) {
     #hexGrid {
         font-size: 13px;
+        padding-right: 50px;
     }
 }
 
@@ -961,18 +952,8 @@ video {
   text-align: center;
   font-size: 32px;
 }
-@media only screen and (max-width: 440px){
-  #bend-cont{
-    margin-bottom: 10px;
-  }
-  #okc-cont{
-    margin-bottom: 10px;
-  }
-  #aus-cont{
-    margin-bottom: 10px;
-  }
-}
-@media only screen and (min-width: 340px){
+
+@media only screen and (max-width: 420px){
   .contact-text{
     font-size: 10px;
   }
@@ -1000,6 +981,17 @@ video {
 @media only screen and (min-width: 1220px){
   .contact-text{
     font-size: 24px;
+  }
+}
+@media only screen and (max-width: 440px){
+  #bend-cont{
+    margin-bottom: 10px;
+  }
+  #okc-cont{
+    margin-bottom: 10px;
+  }
+  #aus-cont{
+    margin-bottom: 10px;
   }
 }
 .case-text-contact{
@@ -1135,7 +1127,8 @@ textarea{
   width: 100%;
   height: auto;
   padding-bottom: 40px;
-  z-index: 1
+  z-index: 1;
+  overflow: hidden;
 }
 .slide-img{
   width: 400px;
