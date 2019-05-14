@@ -557,6 +557,12 @@ video {
 .resp-text{
   font-size: 1.1em;
 }
+
+@media only screen and (max-width: 3000px){
+  .resp-text{
+    font-size: 1.8em;
+  }
+}
 @media only screen and (max-width: 2500px){
   .resp-text{
     font-size: 1.6em;
@@ -567,12 +573,7 @@ video {
     font-size: 1.4em;
   }
 }
-@media only screen and (max-width:440px) {
-  .resp-text{
-    font-size: .65em;
-    padding: 0px;
-  }
-}
+
 
 @media only screen and (max-width:1024px) {
   .resp-text{
@@ -598,6 +599,12 @@ video {
 @media only screen and (max-width:2000px) {
   .resp-text{
     font-size: 1.4em;
+  }
+}
+@media only screen and (max-width:440px) {
+  .resp-text{
+    font-size: .65em;
+    padding: 0px;
   }
 }
 /*Infographics*/
