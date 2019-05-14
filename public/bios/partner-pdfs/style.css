@@ -72,10 +72,16 @@ body{
 }
 #resumeEmbed{
     height: 800px;
-    width: 100%;
+    width: 100vw;
     float: left;
     padding-left:10%;
     padding-right:10%;
+}
+@media only screen and (max-width: 440px){
+  #resumeEmbed{
+    height: 100vh;
+    width: 100vw;
+  }
 }
 #page-header{
     height: 100px;
