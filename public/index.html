@@ -599,21 +599,28 @@
         dots: true,
         arrows: true,
         centerMode: true,
-        centerPadding: '250px',
         focusOnSelect: true,
-        slidesToShow: 1.5,
+        mobileFirst: true,
         responsive: [
           {
             breakpoint: 420,
-            settings: 'unslick',
+            settings: {
+              slidesToShow: 1,
+              centerPadding: '17.5px',
+            },
+            breakpoint: 760,
+            settings: {
+              slidesToShow: 1.5,
+              centerpadding: '250px',
+            },
+
+
           }
-
-
         ]
-
       });
-
     });
+
+
   </script>
 
 
