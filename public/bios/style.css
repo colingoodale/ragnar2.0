@@ -10,7 +10,9 @@
     box-sizing: border-box;
 }
 html{
+  width: 100vw;
   min-height: 100vh;
+  position: relative;
 }
 body{
     background-color:#DCDCDC;
@@ -22,6 +24,11 @@ body{
 }
 body > * {
   flex-shrink: 0;
+}
+@media only screen and (max-width: 440px){
+  body{
+    padding-top: 45px;
+  }
 }
 @media only screen and (min-width: 650px) {
   body{
@@ -300,14 +307,29 @@ img{
     font-size: 2.75em;
     color: #133359
   }
+  @media only screen and (max-width: 440px){
+    .team-name{
+      font-size: 1.5em;
+    }
+  }
   .team-title{
       font-family: 'Freightsans-Bold', Fallback, sans-serif;
       font-size: 2.25em;
       color: #00869D;
   }
+  @media only screen and (max-width: 440px){
+    .team-title{
+      font-size: 1.5em;
+    }
+  }
   p{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   } 
+  @media only screen and (max-width: 440px){
+    p{
+      font-size: .75em;
+    }
+  }
   .ipad-spacer{
       height: 500px;
       width: 100%;
