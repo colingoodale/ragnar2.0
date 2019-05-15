@@ -1233,8 +1233,17 @@ textarea{
 @media only screen and (max-width: 420px){
   .slide-img{
     align-self: center;
-    width: 200px;
-    height: 150px;
+    width: 225px;
+    height: 175px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+  }
+}
+@media only screen and (max-width: 380px){
+  .slide-img{
+    align-self: center;
+    width: 175px;
+    height: 125px;
     margin-bottom: 25px;
     margin-left: 25px;
   }
