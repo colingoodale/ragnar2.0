@@ -13,10 +13,12 @@ html{
   width: 100vw;
   min-height: 100vh;
   position: relative;
+  box-sizing: content-box;
 }
 body{
     background-color:#DCDCDC;
     height: 100%;
+    width:100vw;
     min-height: 100vh;
     padding-top: 100px;
     display: flex;
@@ -25,9 +27,15 @@ body{
 body > * {
   flex-shrink: 0;
 }
+
 @media only screen and (max-width: 440px){
   body{
     padding-top: 45px;
+  }
+}
+@media only screen and (max-width: 330px){
+  body{
+    padding-top: 25px;
   }
 }
 @media only screen and (min-width: 650px) {
@@ -324,10 +332,31 @@ img{
   }
   p{
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  } 
+  }
+  
   @media only screen and (max-width: 440px){
     p{
       font-size: .75em;
+    }
+  }
+  @media only screen and (max-width: 420px){
+    p{
+      font-size: .7em;
+    }
+  }
+  @media only screen and (max-width: 380px){
+    p{
+      font-size: .6em;
+    }
+  }
+  @media only screen and (max-width: 360px){
+    p{
+      font-size: .55em;
+    }
+  }
+  @media only screen and (max-width: 330px){
+    p{
+      font-size: .5em;
     }
   }
   .ipad-spacer{
@@ -351,6 +380,11 @@ img{
       background:59;
       -webkit-text-fill-color: #00869D;
       color: #fff;
+  }
+  @media only screen and (max-width: 330px){
+    button{
+      height: 25px;
+    }
   }
   .spacer-general{
     height: 110px;
