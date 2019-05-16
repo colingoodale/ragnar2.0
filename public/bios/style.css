@@ -28,16 +28,8 @@ body > * {
   flex-shrink: 0;
 }
 
-@media only screen and (max-width: 440px){
-  body{
-    padding-top: 45px;
-  }
-}
-@media only screen and (max-width: 330px){
-  body{
-    padding-top: 25px;
-  }
-}
+
+
 @media only screen and (min-width: 650px) {
   body{
     padding-top: 60px;
@@ -55,10 +47,21 @@ body > * {
 }
 @media only screen and (max-width: 768px){
   html{
-    width: 107.5%;
+    width: 100%;
   }
   body{
+    padding-top: 50px;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 440px){
+  body{
+    padding-top: 25px;
+  }
+}
+@media only screen and (max-width: 330px){
+  body{
+    padding-top: 20px;
   }
 }
 @media only screen and (min-width: 830px) {
@@ -353,10 +356,16 @@ img{
     p{
       font-size: .55em;
     }
+    .chris-text{
+      font-size: .5em;
+    }
   }
   @media only screen and (max-width: 330px){
     p{
       font-size: .5em;
+    }
+    .chris-text{
+      font-size: .45em;
     }
   }
   .ipad-spacer{
@@ -381,9 +390,10 @@ img{
       -webkit-text-fill-color: #00869D;
       color: #fff;
   }
-  @media only screen and (max-width: 330px){
+  @media only screen and (max-width: 400px){
     button{
-      height: 25px;
+      height: 20px;
+      font-size: .5em;
     }
   }
   .spacer-general{
